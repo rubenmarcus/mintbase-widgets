@@ -10,6 +10,9 @@ This is a on-going project where you can load components straight from Mintbase 
 
 This is the widget to showcase your NFT Collection @ NEAR Blockchain.
 
+## live example: 
+https://rub3n.xyz/
+
 ### props:
 
 - user: mandatory
