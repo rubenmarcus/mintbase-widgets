@@ -32,6 +32,40 @@ import { MyNftCollection } from 'mintbase-widgets-react';
 <MyNftCollection user={yourNearAccount} theme="dark">
 ```
 
+## next.js
+
+- install
+``` npm install mintbase-widgets```
+
+- add this code to app.tsx 
+
+```jsx 
+import { applyPolyfills, defineCustomElements } from 'mintbase-widgets/loader'
+
+  useLayoutEffect(() => {
+    applyPolyfills().then(() => {
+      defineCustomElements(window)
+    })
+  }, [])
+```
+
+
+- add to global.d.ts
+ 
+```ts 
+declare namespace JSX {
+  interface IntrinsicElements {
+      'my-nft-collection': { 'user': string , 'theme': string};
+  }
+}
+```
+
+- use it:
+
+```jsx
+    <my-nft-collection user="your near username wallet" theme="dark"></my-nft-collection>
+```
+
 ### use with vanillajs and html
 
 add script tag on head:
