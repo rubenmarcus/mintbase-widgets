@@ -8,4 +8,26 @@ This is a on-going project where you can load components straight from Mintbase 
 
 ## Nft Marketplace
 
- `<nft-marketplace user={yourNearAccount} /> `
+### props:
+
+- user: mandatory
+- theme: optional: 'dark'
+
+### install on react,angular,vue or ember
+
+`npm install mintbase-widgets`
+
+`import { MyNftCollection } from 'mintbase-widgets';`
+
+`<MyNftCollection user={yourNearAccount} theme="dark">`
+
+### use on vanillajs and html
+
+add script tag on head:
+
+```<script type='module' src="https://unpkg.com/mintbase-widgets@0.0.5/dist/mintbase-widgets/mintbase-widgets.esm.js" ></script>```
+
+
+add web component to html
+
+`<my-nft-collection user={yourNearAccount} theme="dark"></my-nft-collection>`

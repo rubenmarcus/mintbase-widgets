@@ -1,16 +1,16 @@
 :host {
   display: block;
 }
-.marketNfts {
+.userNfts {
   display:flex;
   flex-wrap:wrap;
   width:100%;
 }
 
 
-.marketNfts ul li { list-style: none;}
+.userNfts ul li { list-style: none;}
 
-.marketNfts ul li {
+.userNfts ul li {
   width:150px;
   height: 150px;
   text-align: center;

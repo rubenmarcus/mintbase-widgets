@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface MyNftCollection {
-        "isDarkMode": string;
+        "theme": string;
         "user": string;
     }
 }
@@ -24,7 +24,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface MyNftCollection {
-        "isDarkMode"?: string;
+        "theme"?: string;
         "user"?: string;
     }
     interface IntrinsicElements {

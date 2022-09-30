@@ -1,6 +1,6 @@
 import { Component, h, Prop, State } from '@stencil/core';
 import { fetchNftCollection } from '../../services/fetchNftCollection';
-import { MyNftCollection } from '../../types';
+import { MyNftCollectionData } from '../../types';
 
 @Component({
   tag: 'my-nft-collection',
@@ -9,37 +9,33 @@ import { MyNftCollection } from '../../types';
 })
 export class NftCollection {
   @Prop() user: string;
-  @Prop() isDarkMode: string;
-  @State() tokens: MyNftCollection[];
+  @Prop() theme: string;
+  @State() tokens: MyNftCollectionData[];
 
   componentWillLoad() {
-
     fetchNftCollection(this.user).then(async (data: Response) => {
       const res = await data.json();
       if (res) {
         this.tokens = res.data.tokens;
       }
     });
-
   }
 
   render() {
-
-    let widgetClass = this.isDarkMode? 'marketNfts dark' : 'marketNfts'; 
+    const themeClass = this.theme ? `userNfts ${this.theme}` : 'userNfts';
 
     return this.tokens ? (
-      <section class={widgetClass}>
+      <section class={themeClass}>
         {this.tokens.map(token => {
           let image = token.media;
 
-          if (!image.includes('https://arweave.net')) {
+          if (image && !image.includes('https://arweave.net')) {
             image = token.baseUri + '/' + token.media;
           }
-
           return (
             <ul>
               <li>
-                <img src={image} width="100" />
+                {image ? <img src={image} width="100" /> : 'No Media for this NFT'}
                 <h1> {token.title} </h1>
               </li>
             </ul>
