@@ -6,7 +6,7 @@ This is a on-going project where you can load components straight from Mintbase 
 
 # Components
 
-## Nft Collection
+## My Nft Collection 
 
 This is the widget to showcase your NFT Collection @ NEAR Blockchain.
 
