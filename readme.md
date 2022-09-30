@@ -32,7 +32,7 @@ import { MyNftCollection } from 'mintbase-widgets';
 add script tag on head:
 
 ```js
-<script type='module' src="https://unpkg.com/mintbase-widgets@0.0.5/dist/mintbase-widgets/mintbase-widgets.esm.js" ></script>
+<script type='module' src="https://unpkg.com/mintbase-widgets@0.0.6/dist/mintbase-widgets/mintbase-widgets.esm.js" ></script>
 ```
 
 
