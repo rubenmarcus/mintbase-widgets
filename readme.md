@@ -20,7 +20,7 @@ https://rub3n.xyz/
 
 ### install on react
 
- In the present moment React only working with pure React Webpack, not working with Vite or Next.js
+ In the present moment React only working with pure React Webpack, not working with Vite.
 
 ```npm install mintbase-widgets-react```
 
