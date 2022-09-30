@@ -18,19 +18,21 @@ https://rub3n.xyz/
 - user: mandatory
 - theme: optional: 'dark'
 
-### install on react,angular,vue or ember
+### install on react
 
-```npm install mintbase-widgets```
+ In the present moment React only working with pure React Webpack, not working with Vite or Next.js
+
+```npm install mintbase-widgets-react```
 
 ```ts
-import { MyNftCollection } from 'mintbase-widgets';
+import { MyNftCollection } from 'mintbase-widgets-react';
 ```
 
 ```js
 <MyNftCollection user={yourNearAccount} theme="dark">
 ```
 
-### use on vanillajs and html
+### use with vanillajs and html
 
 add script tag on head:
 

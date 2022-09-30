@@ -7,7 +7,7 @@ export const config: Config = {
   outputTargets: [
     react({
       componentCorePackage: 'mintbase-widgets',
-      proxiesFile: './react/src/components/index.ts',
+      proxiesFile: '../mintbase-widgets-react/src/components/index.ts',
       includeDefineCustomElements: true,
       includePolyfills: true
     }),
