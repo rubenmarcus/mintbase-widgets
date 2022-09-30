@@ -1,6 +1,6 @@
 {
   "name": "mintbase-widgets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mintbase Widgets",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
