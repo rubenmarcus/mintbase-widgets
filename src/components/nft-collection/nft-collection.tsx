@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, State } from '@stencil/core';
+import { Component, h, Prop, State } from '@stencil/core';
 import { fetchNftCollection } from '../../services/fetchNftCollection';
 import { MyNftCollection } from '../../types';
 
