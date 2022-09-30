@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute      | Description | Type     | Default     |
-| ------------ | -------------- | ----------- | -------- | ----------- |
-| `isDarkMode` | `is-dark-mode` |             | `string` | `undefined` |
-| `user`       | `user`         |             | `string` | `undefined` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `theme`  | `theme`   |             | `string` | `undefined` |
+| `user`   | `user`    |             | `string` | `undefined` |
 
 
 ----------------------------------------------
