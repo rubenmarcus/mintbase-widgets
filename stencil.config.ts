@@ -4,14 +4,12 @@ import { reactOutputTarget as react } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'mintbase-widgets',
-  bundles: [
-    { components: ['my-nft-collection'] },
-  ],
   outputTargets: [
     react({
-      componentCorePackage: 'nft-collection',
-      proxiesFile: '../mintbase-widgets/src/components/nft-collection/index.ts',
+      componentCorePackage: 'mintbase-widgets',
+      proxiesFile: './react/src/components/index.ts',
       includeDefineCustomElements: true,
+      includePolyfills: true
     }),
     {
       type: 'dist',
